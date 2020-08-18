@@ -73,14 +73,4 @@ if (SpeechRecognition) {
     // }, 500);
   }
 
-  info.textContent = 'Voice Commands: "stop recording", "reset input", "go"';
-} else {
-  console.log("Your Browser does not support speech Recognition");
-  info.textContent = "Your Browser does not support Speech Recognition";
-}
-   var speechResult = event.results[0][0].transcript;
- //return speech and change storyline variable with a result
-    var player = GetPlayer();
-    player.SetVar("SpeechReceived",speechResult);  
-    console.log('Confidence: ' + event.results[0][0].confidence);
-  }
+ 
